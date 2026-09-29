@@ -1,0 +1,36 @@
+# --- Секреты ---
+.env
+.env.*
+!.env.example
+
+# --- Python-мусор ---
+__pycache__/
+*.py[cod]
+
+# --- Виртуальные окружения ---
+venv/
+.venv/
+env/
+
+# --- Кэши и отчёты инструментов ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Сборка пакетов ---
+build/
+dist/
+*.egg-info/
+
+# --- Базы данных и логи ---
+*.log
+*.sqlite3
+*.db
+
+# --- Редакторы и система ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
