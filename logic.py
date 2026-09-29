@@ -1,26 +1,21 @@
 import random
 
 
-def start_game():
+def start_game(mode_choice):
     first_number = 1
 
-    while True:
-        difficulty = input("Уровень сложности (лёгкий/средний/сложный): ").strip().lower()
-
-        if difficulty == "легкий" or difficulty == "лёгкий":
+    if not mode_choice:
+        pass
+    else:
+        if mode_choice == 1:
             last_number = 100
             attempt = 7
-            break
-        elif difficulty == "средний":
+        elif mode_choice == 2:
             last_number = 200
             attempt = 8
-            break
-        elif difficulty == "сложный":
+        else:
             last_number = 500
             attempt = 10
-            break
-        else:
-            continue
 
     computer_number = random.randint(first_number, last_number)
 
