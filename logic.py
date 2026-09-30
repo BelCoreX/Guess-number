@@ -1,16 +1,16 @@
 import random
 
 
-def start_game(mode_choice):
+def start_game(difficulty_choice):
     first_number = 1
 
-    if not mode_choice:
+    if not difficulty_choice:
         pass
     else:
-        if mode_choice == 1:
+        if difficulty_choice == 1:
             last_number = 100
             attempt = 7
-        elif mode_choice == 2:
+        elif difficulty_choice == 2:
             last_number = 200
             attempt = 8
         else:
